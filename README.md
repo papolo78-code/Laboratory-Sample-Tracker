@@ -32,8 +32,47 @@ The application is planned to include:
 
 ## Current Development Status
 
-The initial project concept and requirements have been established. A physical wireframe has been created to represent the proposed user interface, and the project documentation is being maintained through GitHub. A digital wireframe will be used to further refine the interface before application development continues.
+The Laboratory Sample Tracker has progressed from initial planning into the design and development planning stage. The business problem, project objectives, application requirements, and proposed features have been identified. We created an initial wireframe and applied user-interface design principles to the proposed application layout.
+
+The next stage will focus on developing functional application components, testing the user interface, implementing sample-tracking functionality, and preparing the application code for final submission.
 
 ## Project Documentation
 
-Additional information about the design and development process is available in the project's GitHub Wiki.
+The project's GitHub Wiki contains detailed information on planning, design, wireframing, development progress, and future updates for the Laboratory Sample Tracker.
+
+## Version Changelog
+
+### Version 0.1 - Initial Planning
+**Previous Update**
+
+- Identified the business problem for the Laboratory Sample Tracker.
+- Established the initial application concept and objectives.
+- Identified the primary application requirements.
+- Created the GitHub repository and project documentation.
+- Created the initial project outline.
+
+### Version 0.2 - Design and Development Planning
+**Current Update**
+
+- Created an initial paper wireframe for the application.
+- Developed the proposed user interface and navigation structure.
+- Identified important application fields, including Sample ID, Date Received,
+  Test Type, Priority, and Sample Status.
+- Applied mobile application design and user-interface principles.
+- Expanded the GitHub Wiki with wireframe and application design documentation.
+- Evaluated potential cloud and data requirements for future development.
+- Updated the README to reflect current project progress.
+
+### Version 0.3 - Planned Development
+**Future Updates**
+
+- Develop the functional application interface.
+- Implement sample entry and sample status functionality.
+- Add validation for required sample information.
+- Test application navigation and usability.
+- Evaluate local and cloud-based data storage options.
+- Debug identified application issues.
+- Upload application code and supporting files to GitHub.
+- Prepare the application and documentation for final submission in Module 8.
+
+
