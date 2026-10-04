@@ -75,4 +75,29 @@ The project's GitHub Wiki contains detailed information on planning, design, wir
 - Upload application code and supporting files to GitHub.
 - Prepare the application and documentation for final submission in Module 8.
 
+## Week 6 Development Update
+
+During Week 6, development of the Laboratory Sample Tracker moved from the planning and design stages into Android application development. The project was created in Android Studio using Kotlin and Jetpack Compose.
+
+The initial Android project structure has been established, including the MainActivity, application theme files, Android manifest, and Gradle build configuration. The MainActivity currently provides the starting point for the application's user interface and confirms that the basic Jetpack Compose structure is in place.
+
+### Work Completed
+
+- Created the Laboratory Sample Tracker project in Android Studio.
+- Configured the application to use Kotlin and Jetpack Compose.
+- Created and configured MainActivity.kt.
+- Added the Compose theme files: Color.kt, Theme.kt, and Type.kt.
+- Added the AndroidManifest.xml file.
+- Added project-level and application-level Gradle build configuration files.
+- Successfully compiled the Android project using Gradle.
+- Began testing the application with the Android Emulator.
+- Uploaded the current application source code and configuration files to GitHub.
+
+### Current Status
+
+The basic Android application structure is now established, and the project builds successfully. Emulator testing was started during this development phase; however, the Android virtual device environment requires additional troubleshooting before application testing can continue.
+
+### Next Steps
+
+The next development phase will focus on building the Laboratory Sample Tracker user interface and implementing the planned sample-management features. This will include fields for sample information, status, and priority, as well as functionality to save and manage laboratory sample records.
 
