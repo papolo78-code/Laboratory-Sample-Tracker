@@ -101,3 +101,12 @@ The basic Android application structure is now established, and the project buil
 
 The next development phase will focus on building the Laboratory Sample Tracker user interface and implementing the planned sample-management features. This will include fields for sample information, status, and priority, as well as functionality to save and manage laboratory sample records.
 
+### Technical Challenges and Limitations
+
+Several technical issues arose while configuring and running the Android Studio emulator during development of the Laboratory Sample Tracker application. Although the application project compiled successfully with Gradle, attempts to run it on the Android Virtual Device (AVD) failed.
+
+During testing, the emulator abruptly shut down and showed error messages stating that the virtual device was offline. Other problems included plugin-related exceptions and Android Studio launch difficulties. Troubleshooting included reinstalling Android Studio, reviewing the virtual device configuration, and turning off a problematic IDE plugin. 
+
+Despite these difficulties, Gradle built the project successfully, and the configuration files and application source code were published to GitHub. To track development and maintain the project's source code, the team used GitHub. 
+
+The application's ability to run successfully on an Android emulator has not yet been confirmed. We will fix the emulator issues, test the application, and implement the remaining laboratory sample tracking functionalities.
