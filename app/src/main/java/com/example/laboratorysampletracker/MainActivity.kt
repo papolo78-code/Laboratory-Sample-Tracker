@@ -31,6 +31,7 @@ fun LaboratorySampleTracker() {
     var priority by remember { mutableStateOf("") }
     var sampleStatus by remember { mutableStateOf("") }
     var message by remember { mutableStateOf("") }
+    val savedSamples = remember { mutableStateListOf<String>() }
 
     Column(
         modifier = Modifier
@@ -114,8 +115,18 @@ fun LaboratorySampleTracker() {
                 ) {
                     "Please complete the required fields."
                 } else {
-                    "Sample $sampleId entered successfully!"
-                }
+                    savedSamples.add(
+                        "Department: $department\n" +
+                        "Sample ID: $sampleId\n" +
+                        "Date Received: $dateReceived\n" +
+                        "Test Type: $testType\n" +
+                        "Priority: $priority\n" +
+                        "Status: $sampleStatus"
+    )
+
+    "Sample $sampleId saved successfully!"
+}
+
             },
             modifier = Modifier.fillMaxWidth()
         ) {
@@ -125,5 +136,38 @@ fun LaboratorySampleTracker() {
         if (message.isNotEmpty()) {
             Text(message)
         }
+
+        if (savedSamples.isNotEmpty()) {
+    HorizontalDivider()
+
+    Text(
+        text = "Saved Laboratory Samples",
+        style = MaterialTheme.typography.titleLarge
+    )
+
+    Text(
+        text = "Total Samples: ${savedSamples.size}"
+    )
+
+    savedSamples.forEachIndexed { index, sample ->
+        Card(
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(6.dp)
+            ) {
+                Text(
+                    text = "Sample ${index + 1}",
+                    style = MaterialTheme.typography.titleMedium
+                )
+
+                Text(text = sample)
+            }
+        }
+    }
+}
+
+
     }
 }
