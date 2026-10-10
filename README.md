@@ -110,3 +110,28 @@ During testing, the emulator abruptly shut down and showed error messages statin
 Despite these difficulties, Gradle built the project successfully, and the configuration files and application source code were published to GitHub. To track development and maintain the project's source code, the team used GitHub. 
 
 The application's ability to run successfully on an Android emulator has not yet been confirmed. We will fix the emulator issues, test the application, and implement the remaining laboratory sample tracking functionalities.
+
+### Module 7 - Application Development Progress
+
+The Laboratory Sample Tracker application continued to be developed using Kotlin with Jetpack Compose throughout Module 7. After being updated, the application's source code was added to the GitHub repository.
+
+### Features Implemented in Source Code
+
+•	Added a Department drop-down menu with three laboratory divisions: Controlled Substance, Trade, and Other Forensics.
+•	Developed input fields for Sample ID, Date Received, Test Type, Priority, and Sample Status.
+•	Added validation to check that required sample information is entered.
+•	Updated the Save Sample button to add records to an in-memory list.
+•	Added a section that displays entered laboratory samples in individual cards.
+•	Included a counter showing the total number of samples entered.
+
+### Technical Challenges
+
+Three laboratory departments—Controlled Substance, Trade, and Other Forensics—were added to the Department dropdown menu. Sample ID, Date Received, Test Type, Priority, and Sample Status input fields were created. Validation was included to ensure that the necessary sample data was entered. To add entries to an in-memory list, the Save Sample button has been updated. A feature that shows entered laboratory samples on individual cards has been added. included a counter that displayed the total number of samples that were submitted.
+
+The sample storage functionality currently uses temporary memory. Records will not persist after the application closes.
+
+### Future Development - Module 8
+
+The application code will be reviewed, any compilation problems will be fixed, persistent sample storage will be implemented if possible, and the final project submission will be prepared. 
+
+The application's development progress, features that have been incorporated, and known constraints will all be documented in the GitHub repository.
